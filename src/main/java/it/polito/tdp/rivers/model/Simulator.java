@@ -32,7 +32,7 @@ public class Simulator {
 	public Simulator(float k,float fMed,River fiume) {
 		this.model=new Model();
 		this.k = k;
-		this.fMed=fMed;
+		this.fMed=fMed*3600*24;
 		fIn=this.model.getFlows(fiume);
 		
 	}
